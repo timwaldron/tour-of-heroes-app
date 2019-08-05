@@ -10,7 +10,7 @@ import { HEROES } from './mock-heroes';
 export class HeroService {
 
   getHeroes(): Observable<Hero[]> {
-    this.messageService.add(`HeroService: fetching heroes`);
+    this.messageService.add('HeroService: fetching heroes');
     return of(HEROES);
   }
   
